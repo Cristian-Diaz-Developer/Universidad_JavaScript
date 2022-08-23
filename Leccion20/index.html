@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id="cabecero">Ejemplo DOM con JS</h1>
+    <p id="parrafo">Saludos!</p>
+
+    <script>
+        // let cabecero = document.getElementById('cabecero').innerHTML;
+        // console.log('Valor cabecero: ' + cabecero);\
+        let cabecero = document.getElementById('cabecero');
+        console.log(`Valor Cabecero: ${cabecero.innerHTML}`); ///Usando Template Literal 
+        // let parrafo = document.getElementById('parrafo').innerHTML;
+        let parrafo = document.getElementById('parrafo');
+        // console.log('Valor del parrafo: '+ parrafo);
+        console.log(`Valor del parrafo: ${parrafo.innerHTML}`);
+        // console.log('Saludos desde JS');
+        parrafo.innerHTML = 'Nuevo valor del parrafo';
+        cabecero.innerHTML = 'Cambiando el contenido del cabecero';
+        console.log(parrafo);
+        console.log(cabecero);
+    </script>
+</body>
+</html>
